@@ -1,4 +1,3 @@
-
 //default values:
 let selectedColor = "#ff6633"
 let selectedSize = 25;
@@ -15,9 +14,9 @@ fontElement.value = selectedFont;
 
 //setting  output element attributes to default values:
 const outputElement = document.getElementById('output');
-outputElement.value="quick brown fox jumps over the lazy dog"
+outputElement.value = "quick brown fox jumps over the lazy dog"
 outputElement.style.color = selectedColor;
-outputElement.style.fontSize= selectedSize;
+outputElement.style.fontSize = selectedSize;
 outputElement.style.fontFamily = selectedFont;
 
 //adding value change handlers to input elements:
@@ -29,8 +28,8 @@ colorElement.addEventListener('change', (event) => {
 });
 
 sizeElement.addEventListener('change', (event) => {
-  seletedSize = event.target.value;
-  outputElement.style.fontSize = selectedSize+" px";
+  selectedSize = event.target.value;
+  outputElement.style.fontSize = selectedSize + "px";
   console.log(`You selected Size ${event.target.value}`);
 });
 
